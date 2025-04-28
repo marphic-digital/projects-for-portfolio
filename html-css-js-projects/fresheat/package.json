@@ -1,0 +1,14 @@
+{
+  "name": "fresheat",
+  "version": "1.0.0",
+  "description": "Restaurant Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Marphic-Digital",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.87.0"
+  }
+}

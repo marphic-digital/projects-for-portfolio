@@ -1,0 +1,68 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  background-color: #B7B5B0;
+  display: flex;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+[class^=col-] {
+  background-color: #eb0029;
+}
+[class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3 {
+  width: calc((100% - 6rem * 2) / 3);
+}
+
+.col-1-of-4 {
+  width: calc((100% - 6rem * 3) / 4);
+}
+
+.col-2-of-3 {
+  width: calc((100% - 6rem) / 3 * 2 + 6rem);
+}
+
+.col-2-of-4 {
+  width: calc((100% - 6rem) / 4 * 2);
+}
+
+.col-3-of-4 {
+  width: calc((100% - 6rem) / 4 * 3 + 6rem);
+}
+
+/*# sourceMappingURL=style.css.map */
