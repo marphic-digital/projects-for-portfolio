@@ -1,0 +1,6 @@
+Raleway
+open sans
+primary #f56960
+tertiary #101f46
+grey #383838
+secondary #0791BE
