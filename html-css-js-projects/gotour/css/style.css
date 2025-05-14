@@ -20,4 +20,48 @@ body {
   line-height: 1.6;
 }
 
+.section_layout {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #001153;
+}
+
+.row {
+  width: 128rem;
+  padding: 2rem;
+  background-color: #787878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[class^=col-] {
+  background-color: #383838;
+  color: #fff;
+  padding: 2rem;
+}
+[class^=col-]:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.col-1-of-1 {
+  width: 100%;
+}
+
+.col-1-of-2 {
+  width: calc(100% - 2rem);
+}
+
+.col-1-of-3 {
+  width: calc(100% - 2rem * 2);
+}
+
+.col-2-of-3 {
+  width: calc((100% - 2rem) * 2 - 2rem);
+}
+
 /*# sourceMappingURL=style.css.map */

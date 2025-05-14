@@ -1,0 +1,39 @@
+.section_layout{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: $margin-small;
+    background-color: #001153;
+}
+.row{
+    width: $row-width;
+    padding: $padding-small;
+    background-color: $grey-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+[class^='col-']{
+    background-color: $grey-dark;
+    color: $white-color;
+    padding: $padding-small;
+
+    &:not(:last-child){
+        margin-right: $margin-small;
+    }
+}
+.col-1-of-1{
+    width: calc(100%);
+}
+.col-1-of-2{
+    width: calc(100% - #{$margin-small});
+}
+.col-1-of-3{
+    width: calc(100% - (#{$margin-small} * 2));
+
+}
+.col-2-of-3{
+    width: calc((100% - #{$margin-small}) * 2 - #{$margin-small});
+}
