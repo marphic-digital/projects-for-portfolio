@@ -1,5 +1,5 @@
 .section_layout{
-    max-width: 100%;
+    // max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
     background-color: #001153;
 }
 .row{
-    width: $row-width;
+    width: 100%;
     padding: $padding-small;
     background-color: $grey-light;
     display: flex;
@@ -28,12 +28,12 @@
     width: calc(100%);
 }
 .col-1-of-2{
-    width: calc(100% - #{$margin-small});
+    width: calc((100% - #{$margin-small}));
 }
 .col-1-of-3{
-    width: calc(100% - (#{$margin-small} * 2));
+    width: calc(100% - (#{$margin-small} * 2) / 3);
 
 }
-.col-2-of-3{
-    width: calc((100% - #{$margin-small}) * 2 - #{$margin-small});
+.col-1-of-4{
+    width: calc(100% - (#{$margin-small} * 3) / 4);
 }
